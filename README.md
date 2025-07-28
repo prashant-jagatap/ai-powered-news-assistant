@@ -13,3 +13,16 @@ A Python-based Alexa skill for AI-powered news summarization using LLMs and AWS 
 ## Project Status
 
 This is a proof-of-concept demonstrating enterprise-level architecture and development practices for voice-assistant applications.
+
+## Architecture Diagram
+
+![Architecture Diagram](docs/Architecture.png)
+
+## Tech Stack
+
+- **Language**: Python 3.9+
+- **Voice Platform**: Alexa Skills Kit SDK v2
+- **Cloud**: AWS Lambda, DynamoDB, S3
+- **AI/ML**: Amazon Bedrock, Hugging Face
+- **Testing**: pytest, moto
+- **CI/CD**: GitHub Actions
