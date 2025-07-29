@@ -1,0 +1,39 @@
+{
+  "interactionModel": {
+    "languageModel": {
+      "invocationName": "news briefing",
+      "intents": [
+        {
+          "name": "GetDailyNewsBriefingIntent",
+          "samples": [
+            "give me my daily news",
+            "what's in the news today",
+            "read me the headlines"
+          ]
+        },
+        {
+          "name": "ManageSourcesIntent", 
+          "samples": [
+            "add {source} to my news sources",
+            "remove {source} from my sources"
+          ],
+          "slots": [
+            {
+              "name": "source",
+              "type": "NEWS_SOURCE_TYPE"
+            }
+          ]
+        }
+      ],
+      "types": [
+        {
+          "name": "NEWS_SOURCE_TYPE",
+          "values": [
+            {"name": {"value": "BBC"}},
+            {"name": {"value": "Reuters"}}
+          ]
+        }
+      ]
+    }
+  }
+}
